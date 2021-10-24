@@ -282,28 +282,6 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/awards/"><span>Awards</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/teaching/"><span>Teaching</span></a>
         </li>
 
@@ -326,7 +304,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/service/"><span>Services</span></a>
+          <a class="nav-link " href="/service/"><span>Service</span></a>
         </li>
 
         
@@ -405,6 +383,28 @@
         
         
 
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/minds/"><span>MINDS</span></a>
+        </li>
+
+        
+        
+
       
 
         
@@ -458,14 +458,25 @@
   
   <div class="article-style">
 
-<p style='text-align: justify;'> My research spans two lines of work: My first line of work helps to represent the data via identifying underlying low-dimensional structures for effcient inference and decision making in data scarce scenarios. My second line of work is on studying the challenges in building
-collaborative machine learning and signal processing systems capable of solving real-world problems by learning from distributed data in a distributed manner.</p>
+<p style='text-align: justify;'> My research spans two lines of work: My first line of work helps to represent the data via identifying underlying low-dimensional structures for efficient inference and decision making in data scarce scenarios. My second line of work is on studying the challenges in building collaborative machine learning and signal processing systems capable of solving real-world problems by learning from distributed data in a distributed manner.</p>
 
-<h3 id="communication-effcient-algortithms-for-distributed-machine-learning">Communication-Effcient Algortithms for Distributed Machine Learning</h3>
+<h3 id="online-learning-for-sequential-decision-making">Online Learning for Sequential Decision Making</h3>
+
+<p><figure><img align="right" src="./img/alg.png" width="500" height="790"></figure> <p style='text-align: justify;'> Large-scale deployment of autonomous systems in real-world applications demands control algorithms capable of handling dynamic tasks in changing environments and over extended periods. For instance, a robotic system on an exploratory mission in a new environment may have to go through a sequence of tasks whose characterization is unknown and potentially varying as the environment evolves. Furthermore, such variation may seem rather arbitrary to the system if it originates from unknown models, e.g., a human operator or a complex environment affected by multiple decision-makers. The evolution of tasks in dynamic environments requires a formalism divergent from the conventional optimal control and reinforcement learning frameworks where the task and hence its characteristic loss function (or equivalently, reward function) is either known or fixed over time.
+We propose learning-based online control algorithms for adversarial MDPs with bandit feedback. The algorithms compute adaptive policies that gradually changes from one time to the next according to the agent&rsquo;s estimate of the loss function. A central contribution of our work is to introduce an optimistically biased estimator of the loss function which encourages exploration implicitly. This optimistic bias yields a low-variance estimation, which in turn enables us to carry out a high-probability regret analysis.</p>
+
+<h4 id="selected-publication">Selected Publication</h4>
+
+<ul>
+<li><a href="https://www.auai.org/uai2021/pdf/uai2021.370.pdf" target="_blank">No-Regret Learning with High-Probability in Adversarial Markov Decision Processes</a>, <em>Conference on Uncertainty in Artificial Intelligence (UAI),</em> 2021</li>
+<li><a href="https://ieeexplore.ieee.org/abstract/document/9483085" target="_blank">Online Learning with Implicit Exploration in Episodic Markov Decision Processes</a>, <em>American Control Conference (ACC),</em>  2021</li>
+</ul>
+
+<h3 id="communication-efficient-algorithms-for-distributed-machine-learning">Communication-Efficient Algorithms for Distributed Machine Learning</h3>
 
 <p><figure><img align="right" src="./img/net.png" width="500" height="790"></figure> <p style='text-align: justify;'> The ever-increasing computational power of modern technological devices such as mobile phones, wearable devices, and autonomous vehicles as well as the increased interest for privacy-preserving artificial intelligence motivates maintaining the locality of the data and computations. Federated learning (FL) is a new edge-computing approach that advocates training statistical models directly on remote devices by leveraging enhanced local resources on each device. In FL, the training data is stored in a large number of clients (e.g., mobile phones or sensors), and there is a central server (i.e., cloud) whose goal is to manage the training of a centralized model using the clients&rsquo; data. In contrast to the centralized learning paradigm wherein the entire data is stored in the central server, FL enables locality of data storage and model updates which in turn offers computational advantages by delegating computation to multiple clients, and further promotes preservation of privacy of user information. However, given the ever increasing number of participating devices and the high degree of heterogeneity of their stored data, it is imperative to design communication-efficient and accelerated FL algorithms that can efficiently train large-scale machine learning models to high accuracy. To this end, in this project we design algorithms for FL and (non)convex network optimization problems that are capable of finding near-optimal solutions with improved convergence rates and communication efficiency compared to the existing benchmarks.</p>
 
-<h4 id="selected-publications">Selected Publications</h4>
+<h4 id="selected-publication-1">Selected Publication</h4>
 
 <ul>
 <li><a href="https://arxiv.org/abs/2012.04061" target="_blank">Faster Non-Convex Federated Learning via Global and Local Momentum</a>, <em>Preprint,</em> 2021</li>
@@ -477,18 +488,18 @@ collaborative machine learning and signal processing systems capable of solving 
 
 <p><figure><img align="right" src="./img/srf.png" width="500" height="790"></figure> <p style='text-align: justify;'> The <em>sparsity-of-effects</em> or <em>Pareto principle</em> states that most real-world systems are dominated by a small number of low-complexity interactions. This idea is at the heart of compressive sensing and sparse optimization, which computes a sparse representation for a given dataset using a large set of features. In the high-dimensional setting, neural networks can achieve high testing accuracy when there are reasonable models for the local interactions between variables. However, standard neural networks often rely on back-propagation or greedy algorithms to train the weights, which is a computationally intensive procedure. Furthermore, the trained models do not provide interpretable results, i.e., they remain black-boxes. Motivated by addressing these limitations, in this project we introduce a new framework for approximating high-dimensional functions in the case where measurements are <em>expensive</em> and <em>scarce</em>. We propose the  sparse random feature method, which enhance the compressive sensing approach to allow for more flexible functional relationships between inputs and a more complex feature space.  We provide uniform bounds on the approximation error for functions in a reproducing kernel Hilbert space depending on the number of samples and the distribution of features. We further show that the error bounds improve significantly for low order functions, i.e., functions that admit a decomposition to terms depending on only a few of the independent variables.</p>
 
-<h4 id="selected-publications-1">Selected Publications</h4>
+<h4 id="selected-publication-2">Selected Publication</h4>
 
 <ul>
 <li><a href="https://arxiv.org/abs/2103.03191" target="_blank">Function Approximation via Sparse Random Features</a>, <em>Preprint,</em> Feb. 2021</li>
 </ul>
 
-<h3 id="submodular-observation-selection-and-information-gathering">Submodular Observation Selection and Information Gathering</h3>
+<h3 id="submodular-information-gathering-for-networked-systems">Submodular Information Gathering for Networked Systems</h3>
 
 <p><figure><img align="right" src="./img/uas1.png" width="500" height="790"></figure> <p style='text-align: justify;'>  Networked autonomous systems are on a rapid path to become a ubiquitous part of the future societies. Due to the importance of such systems, in this project we studied the problem of estimating a random process from the observations collected by a networked of system of sensing agents that operate under resource constraints. When the dynamics of the process and sensor observations are described by a state-space model and the resource are unlimited, the conventional Kalman filter provides the minimum mean-square error (MMSE) estimates. However, at any given time, restrictions on the available communications bandwidth and computational capabilities and/or power impose a limitation on the number of network nodes whose observations can be used to compute the estimates. This in turn motivates the task of observation selection and information sharing to find the most informative subset of sensed information to decrease the communication burden of the system.
 In my first work in this project, we formulated the problem of selecting the most informative subset of the sensors in a linear observation model as a combinatorial problem of maximizing a monotone set function under a uniform matroid constraint. For the MMSE estimation criterion we showed that the maximum element-wise curvature of the objective function satisfies a certain upper-bound constraint and is, therefore, weak submodular. Since finding the optimal subset of sensed information is NP-hard, we developed an efficient randomized greedy algorithm for sensor selection and established guarantees on the estimator’s performance in this setting. Specifically, the established theoretical guarantees state that the proposed randomized greedy scheme returns a subset of sensed information that yields an estimation error that is on average within a multiplicative factor of the estimation error achieved by the optimal subset of sensed information. The proposed method is superior compared to state-of-the-art greedy and semidefinite programming relaxation methods. Recently, we extended these results to the scenarios with quadratic observation models, rather than linear models, which arise in many practical applications such as tracking objects using Unmanned Aerial Vehicles (UAVs). Finally, we have recently designed a new objective function consisting of the MMSE estimation criterion as well as a consensus-promoting regularization term with the goal of inducing a balanced performance among the sensing agents in the network.</p></p>
 
-<h4 id="selected-publications-2">Selected Publications</h4>
+<h4 id="selected-publication-3">Selected Publication</h4>
 
 <ul>
 <li><p><a href="https://arxiv.org/abs/1807.08627" target="_blank">Randomized greedy sensor selection: Leveraging weak submodularity</a>, <em>IEEE Transactions on Automatic Control,</em> Jan. 2021.</p></li>
@@ -496,12 +507,12 @@ In my first work in this project, we formulated the problem of selecting the mos
 <li><p><a href="http://proceedings.mlr.press/v97/hashemi19a/hashemi19a.pdf" target="_blank">Submodular Observation Selection and Information Gathering for Quadratic Models</a>, <em>International Conference on Machine Learning (ICML),</em> June 2019.</p></li>
 </ul>
 
-<h3 id="evolutionary-self-expressive-models-for-subspace-clustering">Evolutionary Self-Expressive Models for Subspace Clustering</h3>
+<h3 id="clustering-temporal-structured-and-high-dimensional-data">Clustering Temporal, Structured, and High-dimensional Data</h3>
 
 <p><figure><img align="right" src="./img/evo1.png" width="500" height="790"></figure> <p style='text-align: justify;'> An important unsupervised learning problem deals with clustering a collection of points lying on a union of low-dimensional subspaces. Additionally, in many applications data is often acquired at multiple points in time. Exploiting the underlying temporal behavior provides more informative description and enables improved clustering accuracy. Therefore, in addition to the union of subspaces structure, there exists an underlying evolutionary structure characterizing the temporal aspect of data. Thus, it is of interest to design and investigate frameworks that exploit both union of subspaces and temporal smoothness structures to perform fast and accurate clustering, particularly in real-time applications.
 Given the importance of exploiting structures in clustering, we introduced Evolutionary Subspace Clustering (ESC), a method whose objective is to cluster a collection of evolving data points that lie on a union of low-dimensional evolving subspaces. To learn the parsimonious representation of the data points at each time step, we formulated a non-convex optimization framework that exploits the self-expressiveness property of the evolving data while taking into account representation from the preceding time step. To find an approximate solution to the aforementioned non-convex optimization problem, we designed a scheme based on alternating minimization that both learns the parsimonious representation as well as adaptively tunes and infers a smoothing parameter reflective of the rate of data evolution. The latter addressed a fundamental challenge in evolutionary clustering - determining if and to what extent one should consider previous clustering solutions when analyzing an evolving data collection. In two applications of real-time motion segmentation and tracking water masses near the coast of south Africa, the ESC framework outperforms state-of-the-art static subspace clustering algorithms and existing evolutionary clustering schemes in terms of accuracy while incurring a lower computational complexity and hence reduces the running time of processing the data.</p></p>
 
-<h4 id="selected-publication">Selected Publication</h4>
+<h4 id="selected-publication-4">Selected Publication</h4>
 
 <ul>
 <li><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8502063" target="_blank">Evolutionary Self-Expressive Models for
@@ -512,7 +523,7 @@ Subspace Clustering</a>, <em>IEEE Journal of Selected Topics in Signal Processin
 
 <p><figure><img align="right" src="./img/haps1.png" width="500" height="790"></figure> <p style='text-align: justify;'> Genetic variations predispose individuals to hereditary diseases, play an important role in the development of complex diseases, and impact drug metabolism. Haplotype information which contain the full information about the DNA variations in the genome of an individual has been of great importance for studies of human diseases and effectiveness of drugs. Haplotype assembly is the task of reconstructing haplotypes of an individual from a mixture of sequenced chromosome fragments. Most of the mathematical formulations of haplotype assembly such as the minimum error correction (MEC) formulation are known to be NP-hard; the problem becomes even more challenging as the sequencing technology advances and the length of the paired-end reads and inserts increases. While the focus of existing methods for haplotype assembly has primarily been on diploid organisms, where haplotypes come in pairs, assembly of haplotypes polyploid organisms (e.g., plants and crops) is considerably more difficult. In this work we developed a unified framework for haplotype assembly of diploid and polyploid genomes. We formulated haplotype assembly from sequencing data as a sparse tensor decomposition. We cast the problem as that of decomposing a tensor having special structural constraints and missing a large fraction of its entries into a product of two factors, $\mathbf{U}$ and $\mathbf{V}$; tensor $\mathbf{V}$ reveals the haplotype information while $\mathbf{U}$ is a sparse matrix encoding the origin of the erroneous sequencing reads. We designed AltHap, an algorithm which reconstructs haplotypes of either diploid or polyploid organisms by solving this decomposition problem. AltHap exploits underlying structural properties of the factors to perform decomposition at a low computational cost. We also analyzed the convergence properties AltHap and determined bounds on the MEC scores and reconstruction rate that AltHap achieves for a given sequencing coverage and data error rate.</p></p>
 
-<h4 id="selected-publication-1">Selected Publication</h4>
+<h4 id="selected-publication-5">Selected Publication</h4>
 
 <ul>
 <li><a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-018-4551-y" target="_blank">&ldquo;Sparse Tensor Decomposition for Haplotype Assembly of Diploids and Polyploids,&rdquo;</a>  <em>BMC Genomics,</em>  Mar. 2018.</li>
@@ -522,7 +533,7 @@ Subspace Clustering</a>, <em>IEEE Journal of Selected Topics in Signal Processin
 
 <p><figure><img align="right" src="./img/sparse.png" width="500" height="790"></figure> <p style='text-align: justify;'> In this project, we investigated the use of iterative algorithms for the task of sparse signal reconstruction where the goal is to estimate a sparse signal from a few linear combinations of its components. This task can be readily cast as the problem of finding a sparse solution to an underdetermined system of linear equations. Sparse signal reconstruction is encountered in many practical scenarios, including compressed sensing, sparse channel estimation, and compressive DNA microarrays. We proposed an iterative greedy algorithm, called Accelerated Orthogonal Least Squares (AOLS) that efficiently utilizes a recursive relation between components of the optimal solution to the underdetermined least-squares problem with sparsity constraint. AOLS exploits the observation that columns of the measurement matrix having strong correlation with the current residual are likely to have strong correlation with residuals in subsequent iterations; therefore, AOLS selects  multiple columns in each iteration and forms an overdetermined system of linear equation having a solution that is generally more accurate than the one found by the competing state-of-the-art methods. Additionally, AOLS is orders of magnitude faster than competing state-of-the-art methods and thus more suitable for high-dimensional data applications. We also theoretically analyzed the performance of the proposed algorithm and, by doing so, established lower-bounds on the probability of exact recovery of the sparse signal from its linear random measurements both with and without the presence of measurement noise. In both scenarios, we showed that AOLS scheme achieves the information theoretic lower-bound on the minimum number of measurements for exact reconstruction of the signal. Recently, we extended the AOLS method to the Bayesian setting where we exploited prior knowledge that is available on the unknown support of the signal. Additionally, we recently proposed the first algorithm for this problem that achieves the information theoretic lower-bound on the minimum number of measurements for exact reconstruction of the signal while incurring a sublinear computational complexity.</p></p>
 
-<h4 id="selected-publications-3">Selected Publications</h4>
+<h4 id="selected-publication-6">Selected Publication</h4>
 
 <ul>
 <li><p><a href="https://arxiv.org/abs/1907.09064" target="_blank">&ldquo;Progressive Stochastic Greedy Sparse Reconstruction and Support Selection,&rdquo;</a> <em>Submitted</em>, 2021.</p></li>
